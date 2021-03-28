@@ -1066,7 +1066,7 @@ on("sheet:opened", function () {
 			        <h4 class="sheet-center" title="This is from an optional supplement. It uses a d20 for rolls.">Personality</h4>
 			        <div class="sheet-row sheet-sub-header sheet-small-label">
 							<div class="sheet-col-1-2 sheet-padl sheet-left">Faith</div>
-                            <div class="sheet-col-1-2 sheet-padr sheet-center">Field of Knowledge</div>
+							<div class="sheet-col-1-2 sheet-padl sheet-left">Deity</div>
 						</div>
 					<div class="sheet-col-1-3  sheet-center" title="This is for optional ability modifiers if used">
 									<select name="attr_deity">
@@ -1077,11 +1077,18 @@ on("sheet:opened", function () {
                                         <option value="4">Ishtarese</option>
                                         <option value="5">Samilist</option>
                                         <option value="6">Oikosic</option>
+                                        <option value="7">Other</option>
 									</select>
 								</div>
-					<div class="sheet-col-1-4  sheet-center" title="This is for optional ability modifiers if used">
+					<div class="sheet-col-1-2 sheet-vert-middle sheet-padr"><input type="text" class=" sheet-leftr" name="attr_deityname" title=""></div>
+					
+					<div class="sheet-row sheet-sub-header sheet-small-label">
+							<div class="sheet-col-1-2 sheet-padl sheet-left">Vice</div>
+                            <div class="sheet-col-1-2 sheet-padr sheet-left">Virtue</div>
+						</div>
+					<div class="sheet-col-1-3  sheet-center" title="This is for optional ability modifiers if used">
 									<select name="attr_vice">
-                                        <option value="0">Pick your Vice!</option>
+                                        <option value="0">No Vice</option>
                                         <option value="1">Deceit (Stress lost from LyingYou must hide your goals even from allies, Conflicts with Honesty)</option>
                                         <option value="2">Envy (You cannot have minions with any higher attributes than you, Conflicts with Gratitude)</option>
                                         <option value="3">Gluttony (You consume twice your average daily rations, Conflicts with Temperance)</option>
@@ -1092,9 +1099,9 @@ on("sheet:opened", function () {
                                         <option value="8">Wrath (You must Kill or Humiliate all enemies defeated in combat, Conflicts with Patience)</option>
 									</select>
 								</div>
-					<div class="sheet-col-1-4  sheet-center" title="This is for optional ability modifiers if used">
+					<div class="sheet-col-1-2  sheet-center" title="This is for optional ability modifiers if used">
 									<select name="attr_virtue">
-                                        <option value="0">Pick your Virtue!</option>
+                                        <option value="0">No Virtue</option>
                                         <option value="1">Honesty (You cannot Lie or Break Oaths and Promises, Conflicts with Deceit)</option>
                                         <option value="2">Gratitude (You must return favors of equal value for any help, Conflicts with Envy)</option>
                                         <option value="3">Temperance (You cannot drink alchohol or potions, Conflicts with Gluttony)</option>
@@ -1206,23 +1213,7 @@ on("sheet:opened", function () {
 							    </div>
 						</div>
 				<!-- Stats End-->
-				<h4 class="sheet-center">Movement</h4>
-					<div class="sheet-row sheet-padb">
-						<div class="sheet-row">
-						    <div class="sheet-col-1-6 sheet-small-label sheet-center">
-							    <input type="number" name="attr_maxsprint" value="(round((@{agility})*(@{armorstatus}))" disabled="disabled" ><br/>Sprint</div>
-						    <div class="sheet-col-1-6 sheet-small-label sheet-center">
-							    <input type="number" name="attr_maxleap" value="(@{agility}-@{wounds})" disabled="disabled" ><br/>Leap</div>
-						    <div class="sheet-col-1-6 sheet-small-label sheet-center">
-							    <input type="number" name="attr_maxclimb" value="(@{health}-@{wounds})" disabled="disabled" ><br/>Climb</div>
-						    <div class="sheet-col-1-6 sheet-small-label sheet-center">
-							    <input type="number" name="attr_maxswim" value="(@{strength}-@{wounds})" disabled="disabled" ><br/>Swim</div>
-							<div class="sheet-col-1-6 sheet-small-label sheet-center">
-							    <input type="number" name="attr_maxflight" value="(@{agility}-@{wounds})" disabled="disabled" ><br/>Flight</div>
-							<div class="sheet-col-1-6 sheet-small-label sheet-center">
-							    <input type="number" name="attr_maxteleport" value="(@{aura})" disabled="disabled" ><br/>Teleport</div>
-						</div>
-					</div>
+				
 					
 				
 					
