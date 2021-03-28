@@ -1268,7 +1268,7 @@ on("sheet:opened", function () {
 				<div class="sheet-row">
 				    <div class="sheet-col-1-2 sheet-core-stat-label">Faith</div>
 					<div class="sheet-col-1-6">
-							<input type="number" name="attr_faith" value="round((@{aura})+(@{facetype}+@{biologicalsex}+@{soultype})/(@{necklacemagic}))" disabled="disabled" />
+							<input type="number" name="attr_faith" value="round((@{aura})+(@{facetype}+@{biologicalsex}+@{soultype}+@{auratype})/(@{necklacemagic}))" disabled="disabled" />
 						</div>
 				</div>
 				<!-- Ability End-->
@@ -1292,7 +1292,7 @@ on("sheet:opened", function () {
 				<div class="sheet-row">
 				    <div class="sheet-col-1-2 sheet-core-stat-label">Magic</div>
 					<div class="sheet-col-1-6">
-							<input type="number" name="attr_magic" value="round((@{aura})+(@{tailtype}+@{horntype}+@{soultype})/(@{ringmagic}))" disabled="disabled" />
+							<input type="number" name="attr_magic" value="round((@{aura})+(@{tailtype}+@{horntype}+@{soultype}+@{auratype})/(@{ringmagic}))" disabled="disabled" />
 						</div>
 				</div>
 				<!-- Ability End-->
